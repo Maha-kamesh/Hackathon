@@ -1,0 +1,204 @@
+/* ===============================
+   GLOBAL RESET
+=================================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: linear-gradient(90deg, #020617, #0f172a);
+  color: white;
+  padding-top: 76px; /* ✅ Prevents navbar overlap */
+}
+
+
+/* ===============================
+   NAVBAR
+=================================*/
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 76px;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+
+  background: rgba(2, 6, 23, 0.75);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+
+/* ===============================
+   LOGO
+=================================*/
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.7rem;
+  font-weight: 800;
+}
+
+
+/* ===============================
+   SEARCH BAR
+=================================*/
+.nav-search {
+  position: relative;
+  width: 420px;
+}
+
+.nav-search input {
+  width: 100%;
+  padding: 12px 18px 12px 45px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+
+  background: rgba(255,255,255,0.08);
+  color: white;
+}
+
+.nav-search input::placeholder {
+  color: #94a3b8;
+}
+
+
+/* ===============================
+   NAV BUTTON
+=================================*/
+.btn-secondary {
+  background: rgba(255,255,255,0.08);
+  color: white;
+  border: 1px solid rgba(255,255,255,0.15);
+  padding: 10px 22px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-secondary:hover {
+  background: rgba(255,255,255,0.15);
+}
+
+
+/* ===============================
+   DASHBOARD / UPLOAD PAGE
+=================================*/
+.dashboard-wrapper {
+  min-height: 100vh;
+  padding: 40px 20px 60px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* ===============================
+   UPLOAD CARD
+=================================*/
+.upload-card {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(18px);
+
+  border-radius: 20px;
+  padding: 50px 40px;
+  text-align: center;
+
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+}
+
+
+/* ===============================
+   TITLE
+=================================*/
+.upload-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.upload-subtitle {
+  color: #94a3b8;
+  margin-bottom: 35px;
+}
+
+
+/* ===============================
+   UPLOAD BOX
+=================================*/
+.upload-box {
+  border: 2px dashed rgba(255,255,255,0.2);
+  padding: 40px;
+  border-radius: 16px;
+}
+
+
+/* ===============================
+   UPLOAD BUTTON
+=================================*/
+.upload-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #3b82f6, #60a5fa);
+  color: white;
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.upload-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(59,130,246,0.4);
+}
+
+
+/* ===============================
+   FILE NAME
+=================================*/
+.file-name {
+  margin-bottom: 20px;
+  color: #22c55e;
+  font-weight: 500;
+}
+
+
+/* ===============================
+   ANALYZE BUTTON
+=================================*/
+.analyze-btn {
+  background: #22c55e;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.analyze-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(34,197,94,0.4);
+}
